@@ -1,0 +1,526 @@
+.myScrollableBlock {
+  display: block;
+  height: 200px;
+  overflow: auto;
+}
+
+html,body, #mapa, #mapaGoogle {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+label {
+	margin-bottom: 0px;
+	font-weight: normal;
+}
+
+#mapa, #mapaGoogle {
+	position: absolute;
+}
+
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus
+	{
+	color: #000;
+	background-color: #e7e7e7;
+}
+
+.navbar-default .navbar-brand {
+	color: #000;
+}
+
+.listaMedida div,.listaDraw div {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+
+.ol-attribution {
+	display: none;
+}
+
+tooltip [role="tooltip"] {
+	display: none;
+}
+
+.ol-zoom {
+	top: 5.5em;
+	right: 1.0em;
+	left: inherit;
+}
+
+.ol-zoomslider {
+	top: 9.5em;
+	right: 1.0em;
+	left: inherit;
+	width: 2.0005em;
+}
+
+#mousePosition {
+	background: rgba(255, 255, 255, .7);
+	border-radius: 5px;
+	bottom: 8px;
+	right: 20px;
+	padding: 5px;
+	position: absolute
+}
+
+.custom-mouse-position {
+	border: 1px solid #eee;
+	border-top: none;
+	color: #eee;
+	font-size: 12px;
+	text-align: center;
+	margin: 1px;
+	padding: 0px 15px 2px 15px;
+	font-weight: bolder;
+}
+
+.ol-scale-line {
+	background: rgba(255, 255, 255, .8);
+}
+
+.ol-scale-line {
+  border-radius: 4px;
+  bottom: 8px;
+  left: 8px;
+  padding: 2px;
+  position: absolute;
+}
+
+.ol-control {
+	background: rgba(255, 255, 255, .8);
+}
+
+.ol-zoomslider {
+	background: rgba(255, 255, 255, .8);
+}
+
+.ol-zoomslider-thumb {
+	background: #979b9e;
+}
+
+.ol-control button {
+    background: #979b9e;
+}
+
+.ol-control button:hover {
+   	background: #979b9e;
+}
+
+.ol-scale-line-inner {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	border: 1px solid black;
+	border-top: none;
+	margin: 4px;
+	color: black;
+	font-size: 12px;
+}
+
+.custom-mouse-position {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	border: 1px solid black;
+	border-top: none;
+	margin: 1px;
+	color: black;
+	font-size: 12px;
+}
+
+.ol-zoom-in span,.ol-zoom-out span {
+	margin-left: -130px !important;
+	background: black !important;
+	color: white !important;
+	border-radius: 5px !important;
+	padding: 5px 20px 5px 20px !important;
+	margin-top: -3px !important;
+	font-size: 12px !important;
+	min-width: 55px;
+}
+
+.ferramenta {
+	position: absolute;
+	z-index: 1;
+	margin-top: 55px;
+	margin-left: 3px;
+	padding: 4px;
+
+	/* 	position: absolute;
+	z-index: 1;
+	margin-top: 4.5em;
+	margin-left: 1em;
+	padding: 4px;
+	background: rgba(255, 255, 255, .8);
+ */ /* width: 48px; */
+
+	/* position: absolute;
+	z-index: 1;
+	margin-top: 5.5em;
+	margin-left: 0px;
+	
+	background: rgba(255, 255, 255, .7);
+	
+	width: 48px;
+	
+	border-radius : 0px 10px 10px 0px;
+	-moz-border-radius: 0px 10px 10px 0px;
+	-webkit-border-radius: 0px 10px 10px 0px; */
+}
+
+.btn-toolbar>.btn,.btn-toolbar>.btn-group,.btn-toolbar>.input-group {
+	margin-left: 0px;
+}
+
+.dropdown-menu>li>div {
+	display: block;
+	padding: 3px 20px;
+	clear: both;
+	font-weight: 400;
+	line-height: 1.42857143;
+	color: #333;
+	white-space: nowrap;
+}
+
+.dropdown-menu>li>div:hover {
+	background: #eee;
+}
+
+/* .ferramenta li:hover {
+	
+	background-color: rgba(255, 255, 255, .8);
+	color: white;
+	
+	border-radius: 0px 10px 10px 0px;
+	-moz-border-radius: 0px 10px 10px 0px;
+	-webkit-border-radius: 0px 10px 10px 0px;
+	
+	width: 50px;
+	
+}
+
+.ferramenta li{
+	margin-left: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	list-style: none;
+} */
+.ferramenta #controlToggle {
+	margin-top: 10px;
+	padding-left: 0px;
+}
+
+.tooltip {
+	min-width: 200px;
+}
+
+.icone-mao {
+	background-image: url(../image/ferramenta/mao.png);
+	background-repeat: no-repeat;
+}
+
+.icone-ponto {
+	background-image: url(../image/ferramenta/ponto.png);
+	background-repeat: no-repeat;
+}
+
+.icone-linha {
+	background-image: url(../image/ferramenta/linha.png);
+	background-repeat: no-repeat;
+}
+
+.icone-poligono {
+	background-image: url(../image/ferramenta/poligono.png);
+	background-repeat: no-repeat;
+}
+
+.icone-distancia {
+	background-image: url(../image/ferramenta/distancia.png);
+	background-repeat: no-repeat;
+}
+
+.icone-area {
+	background-image: url(../image/ferramenta/area.png);
+	background-repeat: no-repeat;
+}
+
+.icone-modificar {
+	background-image: url(../image/ferramenta/editar.png);
+	background-repeat: no-repeat;
+}
+
+.icone-raio {
+	background-image: url(../image/ferramenta/raio.png);
+	background-repeat: no-repeat;
+}
+
+.image-ferramentas {
+	width: 40px;
+	height: 40px;
+}
+
+/**
+ *	Style - Dialog medição (Distância e Área)
+ */
+.listaMedida {
+	padding: 5px;
+	background: #e7e7e7;
+	margin: 0px 0 !important;
+}
+
+.listaDraw {
+	padding: 5px;
+	background: #e7e7e7;
+	margin: 0px 0 !important;
+}
+
+.col-listaMedida {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.listaMedida-ativa {
+	background: #e7e7e7;
+}
+
+.ui-dialog {
+	z-index: 1030;
+	top: 200px;
+	left: 5px;
+	font-size: 13px;
+}
+
+.ui-widget-header {
+	background: #979b9e;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.bs-callout {
+	margin: 5px 0;
+	border: 1px solid #eee;
+	border-left-width: 5px;
+	border-radius: 3px;
+}
+
+.bs-callout-info {
+	border-left-color: #5bc0de;
+}
+
+.bs-callout-warning {
+	border-left-color: #f0ad4e;
+}
+
+.bs-callout-danger {
+	border-left-color: #d9534f;
+}
+
+.bs-callout-success {
+	border-left-color: #5cb85c;
+}
+
+.bs-callout-primary {
+	border-left-color: #979b9e;
+}
+
+/**
+ * Style do alerta 
+ */
+#mensagemAlertaUser {
+	float: right;
+	z-index: 999;
+	position: relative;
+	margin-top: 5.5em;
+	margin-right: 4em;
+}
+
+#logoSistemaImpressao {
+	-webkit-print-color-adjust: exact;
+	background: rgba(255, 255, 255, .5) !important;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 5px;
+	left: 5px;
+	display: none;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+
+#logoSistemaImpressao img {
+	width: 90px;
+	height: 90px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+#logoNorteImpressao {
+	-webkit-print-color-adjust: exact;
+	background: rgba(255, 255, 255, .5) !important;
+	background-image: url(../image/componente/rosaDosVentos.png) !important;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 115px;
+	height: 115px;
+	top: 5px;
+	right: 5px;
+	display: none;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+}
+
+#logoCIHImpressao {
+	-webkit-print-color-adjust: exact;
+	background-image: url(../image/componente/logocih_50.png) !important;
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 60px;
+	height: 50px;
+	bottom: 10px;
+	right: 10px;
+	display: none;
+	opacity: .5;
+}
+
+#legendaImpressao {
+	-webkit-print-color-adjust: exact;
+	display: none;
+}
+
+/**
+	Layout - Layer Switch
+*/
+.tree {
+	min-height: 20px;
+	/*max-height: 150px;*/
+	overflow: auto;
+	padding: 3px;
+	margin-bottom: 5px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05)
+}
+
+.tree li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0px 0px 0px 0px;
+	position: relative;
+}
+.ui-dialog .ui-dialog-content {
+  position: relative;
+  border: 0;
+  padding: 0;
+  background: none;
+  overflow: auto;
+}
+ul.layerstack {
+	list-style: none;
+}
+
+ul.layerstack li {
+	border-bottom: 1px solid #ccc;
+	padding: 3px;
+}
+
+ul.layerstack li:hover {
+	background-color: #eee;
+}
+
+ul.layerstack li.selected {
+	background-color: #ddd;
+}
+
+.tree li::before,.tree li::after {
+	content: '';
+	left: -26px;
+	position: absolute;
+	right: auto
+}
+
+.tree li::before {
+	border-left: 1px solid #000;
+	bottom: 50px;
+	height: 100%;
+	top: 0;
+	width: 1px
+}
+
+.tree li::after {
+	border-top: 1px solid #000;
+	height: 20px;
+	top: 11px;
+	width: 15px;
+}
+
+.tree li span {
+	display: inline-block;
+	padding: 3px 8px;
+	text-decoration: none
+}
+
+.tree li.parent_li>span {
+	cursor: pointer
+}
+
+.tree>ul>li::before,.tree>ul>li::after {
+	border: 0
+}
+
+.tree li:last-child::before {
+	height: 20px;
+}
+
+.tree li.parent_li>span:hover,.tree li.parent_li>span:hover+ul li span {
+	/* background: #eee;
+	border: 1px solid #94a0b4;
+	color: #000;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; */
+}
+
+.gray-555{
+	background: #555;
+	color: white;
+}
+
+.parent_li ul{
+	max-height: 500px;
+}
+
+.gmnoprint {
+	display: none;
+}
+
+.ui-dialog .ui-dialog-content {
+  position: relative;
+  border: 0;
+  padding-top: 5px;
+  background: none;
+  overflow: auto;
+}
+
+.parent_li span {
+	  margin-left: -17px;
+}
+
+.allCamadas{
+	  margin-left: 17px;
+}
+
+.tree ul ul li{
+	  margin-left: -17px;
+}
+
+.inlineblock{
+	display: inline-block !important;
+}	  
+
+.selectedCamadaLayerSwitch{
+    background: #ddd;
+    padding-left: 5px;
+    padding-right: 5px;
+}
